@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <nav class="menu">
+    <div class="menu">
         <ul>
             <!-- A11y change -->
             <li><a href="/">Home</a></li>
@@ -19,7 +19,7 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="https://google.com" target="_blank">Google</a></li>
         </ul>
-    </nav>
+    </div>
 
     <div class="hero">
         <h1>Personal Budget</h1>
@@ -103,9 +103,7 @@
                     {
                         data: [],
                         backgroundColor: [
-                            '#ffcd56',
-                            '#ff6384',
-                            '#36a2eb',
+                            
                             '#fd6b19',
                             '#83FF33',
                             '#F633FF',
@@ -134,8 +132,8 @@
     svg.append("g")
 	.attr("class", "lines");
 
-    var width = 500,
-    height = 250,
+    var width = 300,
+    height = 150,
 	radius = Math.min(width, height) / 2;
 
 var pie = d3.layout.pie()
